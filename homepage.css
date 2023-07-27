@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styling the Navigation Bar */
+
+nav{
+    box-shadow: 3px 3px 3px lightgray;
+    
+    /* top: 0;
+    margin-bottom: 32px;
+    color: white; */
+    padding: 10px;
+}
+
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+.container{
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cafelogo img{
+
+    height: 100px;
+    width: 100px;
+}
+
+.bar{
+    font-size: 30px;
+}
+
+.bar:hover{
+    cursor: pointer;
+}
+
+
+/* Styling the Hero Section */
+.hero{
+    min-height: 800px;
+}
+
+.hero_container
+{
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.part1 img{
+
+    height: 480px;
+    width: 580px;
+    margin-top: 60px;
+    margin-left: 200px;
+}
+
+.tag{
+
+    display: block;
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #BA704F;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.part2 h1{
+    font-size: 90px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.explore{
+
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    background-color: #DFA878;
+    font-weight: 800;
+    transition: 0.2s ease-in-out;
+
+   
+}
+
+.explore:hover{
+
+    background-color: #aa601f;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+@media(max-width: 786px)
+{
+    .hero_container{
+        flex-direction: column;
+    }
+
+    .part1 img{
+
+        height: 280px;
+        width: 380px;
+        margin: 0 auto;
+    }
+
+    .part2{
+        gap: 10px;
+    }
+
+    .text 
+    {
+        padding: 10px;
+    }
+
+    .text p
+    {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .text h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .text h3{
+        margin: 10px auto;
+        
+    }
+
+    .explore{
+        display: block;
+        width: 30vw;
+        margin: 0 auto;
+        
+
+    }
+}
+
+
+/* Designing the Features Section */
+
+.feature_section{
+    min-height: 9000px;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.feature_element{
+
+    display: flex;
+    flex-direction: row;
+    transition: 0.2s ease-in;
+    padding: 10px;
+}
+
+.feature_element:hover{
+
+    box-shadow: 3px 3px 3px lightgrey;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+.element_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+    padding: 3px 10px;
+    font-size: 14px;
+    justify-content: center;
+   
+}
+
+.feature_element img{
+
+    height: 70px;
+    width: 70px;
+}
+
+@media(max-width: 786px)
+{
+    .features{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .element_text{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature_element{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+    .feature_element img{
+        margin-top: 10px;
+    }
+
+    .element_text h4{
+        font-size: 20px;
+    }
+}
+
+/* styling the divider */
+.divider{
+    border: 1px solid rgb(202, 202, 202);
+    margin: 40px 20px;
+}
+
+
+/* Styling the Ambience Section */
+
+.menu{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.menu .tag{
+    align-self: center;
+}
+
+.grid
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    
+  
+    
+}
+
+.grid img{
+
+    height: 150px;
+    width: 250px;
+    transition: 0.2s ease-in;
+    border-radius: 10px;
+    
+}
+
+.grid img:hover
+{
+    transform: scale(1.05);
+    
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    
+}
+
+@media(max-width: 786px){
+    .grid{
+
+        flex-direction: column;
+    }
+}
+
+
+/* Styling the bottom section */
+
+.bottomsection
+{
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CEE6F3;
+}
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    background-color: #CEE6F3;
+    background-blend-mode: multiply;
+}
+
+.bottom_tag
+{
+    font-size: 25px;
+    font-weight: 800;
+    color: #aa601f;
+}
+.mainlink ul{
+    list-style: none;
+    
+}
+
+.mainlink ul li{
+
+    margin: 10px 0;
+}
+
+.support ul{
+
+    list-style: none;
+    
+}
+
+.support ul li{
+
+    margin: 17px 0;
+}
+
+.icon_img{
+
+    height: 20px;
+    width: 20px;
+    background-color: #CEE6F3;
+    background-blend-mode: multiply;
+}
+
+.news_icons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news_icons input{
+
+    margin-top: 5px;
+    padding: 5px 20px;
+}
+
+@media(max-width: 786px)
+{
+    .bottomsection{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .news_icons{
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom_tag{
+
+        text-align: center;
+    }
+    
+    .support, .mainlink ul li{
+
+        text-align: center;
+    }
+
+}
+
